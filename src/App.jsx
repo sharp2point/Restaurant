@@ -11,7 +11,8 @@ const App = () => {
   return (
     <div className="font-poppins bg-back">
       <Header />
-      {/* <NavIcon />
+      <NavIcon />
+      {/* 
       <Home />
       <About />
       <Recipe />
