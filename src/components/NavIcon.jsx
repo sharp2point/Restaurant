@@ -18,8 +18,14 @@ const NavIcon = () => {
         >
           {mainMenu.map((main) => {
             return (
-              <div className="p-2 rounded-full bg-glass" key={main.id}>
-                <a className="text-white text-xl" href="">
+              <div
+                className="p-2 rounded-full bg-glass"
+                key={main.id}
+                onClick={() => {
+                  setToggle(false);
+                }}
+              >
+                <a className="text-white text-xl" href={`#${main.href}`}>
                   {main.icon}
                 </a>
               </div>
